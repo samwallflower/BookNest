@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"/>
+
+    <item
+        android:id="@+id/nav_reading"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="Reading List"/>
+
+
+    <item
+        android:id="@+id/nav_notes"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Notes"/>
+
+    <item
+        android:id="@+id/nav_favorites"
+        android:icon="@android:drawable/btn_star_big_on"
+        android:title="Favorites"/>
+
+</menu>
