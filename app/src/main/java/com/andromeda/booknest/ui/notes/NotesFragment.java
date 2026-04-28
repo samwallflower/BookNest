@@ -22,7 +22,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.andromeda.booknest.adapter.NotesAdapter;
 import com.andromeda.booknest.database.AppDatabase;
 import com.andromeda.booknest.model.BookNote;
-import com.example.booknest.R;
+import com.andromeda.booknest.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 

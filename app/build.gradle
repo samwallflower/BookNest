@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.booknest'
+    namespace 'com.andromeda.booknest'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.booknest"
+        applicationId "com.andromeda.booknest"
         minSdk 27
         targetSdk 34
         versionCode 1

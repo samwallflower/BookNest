@@ -21,7 +21,7 @@ import com.andromeda.booknest.BookDetailActivity;
 import com.andromeda.booknest.adapter.FavoritesAdapter;
 import com.andromeda.booknest.database.AppDatabase;
 import com.andromeda.booknest.model.FavoriteBook;
-import com.example.booknest.R;
+import com.andromeda.booknest.R;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.util.concurrent.Executors;

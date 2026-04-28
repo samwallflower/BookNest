@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.andromeda.booknest.model.SearchResult;
 import com.bumptech.glide.Glide;
-import com.example.booknest.R;
+import com.andromeda.booknest.R;
 
 import java.util.ArrayList;
 import java.util.List;

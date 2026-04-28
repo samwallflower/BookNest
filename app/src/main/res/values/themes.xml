@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.Booknest" parent="Theme.MaterialComponents.Light.DarkActionBar">
+
+    <!-- Main app theme — dark, no ActionBar (fixes the overlap issue) -->
+    <style name="Theme.BookNest" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="background">@color/background</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/surface</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+
+        <!-- Make status bar icons light (white) since background is dark -->
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Text styles -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+
+        <!-- Material card default background -->
+        <item name="colorSurface">@color/card_bg</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+
+        <!-- Bottom nav bar colours -->
+        <item name="bottomNavigationStyle">@style/BottomNavStyle</item>
     </style>
+
+    <!-- Bottom navigation styling -->
+    <style name="BottomNavStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">@color/surface</item>
+        <item name="itemIconTint">@color/bottom_nav_colors</item>
+        <item name="itemTextColor">@color/bottom_nav_colors</item>
+    </style>
+
 </resources>

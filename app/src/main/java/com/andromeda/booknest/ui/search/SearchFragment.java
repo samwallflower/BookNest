@@ -18,13 +18,14 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.andromeda.booknest.BookDetailActivity;
+import com.andromeda.booknest.R;
 import com.andromeda.booknest.adapter.SearchAdapter;
 import com.andromeda.booknest.api.RetrofitClient;
 import com.andromeda.booknest.database.AppDatabase;
 import com.andromeda.booknest.model.FavoriteBook;
 import com.andromeda.booknest.model.SearchResponse;
 import com.andromeda.booknest.model.SearchResult;
-import com.example.booknest.R;
+
 
 import java.util.List;
 import java.util.concurrent.Executors;
@@ -63,7 +64,7 @@ public class SearchFragment extends Fragment {
                 intent.putExtra("bookId", book.getBookId());
                 intent.putExtra("title", book.getTitle());
                 intent.putExtra("author", book.getFirstAuthor());
-                intent.putExtra("publishYear", book.getPublishYear());
+                intent.putExtra("year", book.getPublishYear());
                 intent.putExtra("coverUrl", book.getCoverUrl());
                 startActivity(intent);
             }

@@ -4,33 +4,41 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="12dp"
-    android:layout_marginEnd="12dp"
+    android:layout_marginStart="14dp"
+    android:layout_marginEnd="14dp"
     android:layout_marginBottom="10dp"
-    app:cardCornerRadius="12dp"
-    app:cardElevation="3dp">
+    app:cardBackgroundColor="@color/card_bg"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/divider"
+    app:strokeWidth="1dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="12dp">
+        android:padding="14dp"
+        android:gravity="center_vertical">
 
-        <!-- Book cover -->
+        <!-- Book cover with rounded corners -->
+
+
         <ImageView
             android:id="@+id/imgCover"
-            android:layout_width="70dp"
-            android:layout_height="100dp"
+            android:layout_width="64dp"
+            android:layout_height="92dp"
             android:scaleType="fitCenter"
-            android:contentDescription="Cover" />
+            android:contentDescription="Book Cover" />
 
-        <!-- Text info -->
+
+        <!-- Book info -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:paddingStart="12dp">
+            android:paddingStart="14dp"
+            android:paddingEnd="4dp">
 
             <TextView
                 android:id="@+id/tvTitle"
@@ -40,15 +48,23 @@
                 android:textStyle="bold"
                 android:textColor="@color/text_primary"
                 android:maxLines="2"
-                android:ellipsize="end" />
+                android:ellipsize="end"
+                android:lineSpacingMultiplier="1.2" />
+
+            <!-- Accent line under title -->
+            <View
+                android:layout_width="32dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:background="@color/colorPrimary" />
 
             <TextView
                 android:id="@+id/tvAuthor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="13sp"
-                android:textColor="@color/text_secondary"
-                android:layout_marginTop="4dp"
+                android:textColor="@color/colorTeal"
                 android:maxLines="1"
                 android:ellipsize="end" />
 
@@ -57,20 +73,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
-                android:textColor="@color/text_secondary"
+                android:textColor="@color/text_hint"
                 android:layout_marginTop="4dp" />
 
         </LinearLayout>
 
-        <!-- Favorite button -->
+        <!-- Favorite star button -->
         <ImageView
             android:id="@+id/btnFavorite"
             android:layout_width="36dp"
             android:layout_height="36dp"
-            android:layout_gravity="center_vertical"
             android:src="@android:drawable/btn_star_big_off"
             android:contentDescription="Add to Favorites"
-            android:padding="4dp" />
+            android:padding="4dp"
+            app:tint="@color/star_color" />
 
     </LinearLayout>
 

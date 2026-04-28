@@ -14,12 +14,12 @@ public class ReadingListBook {
     private String coverUrl;
     private int position;
 
-    public ReadingListBook(@NonNull String id,
+    public ReadingListBook(@NonNull String bookId,
                            String title,
                            String author,
                            String coverUrl,
                            int position) {
-        this.bookId = id;
+        this.bookId = bookId;
         this.title = title;
         this.author = author;
         this.coverUrl = coverUrl;

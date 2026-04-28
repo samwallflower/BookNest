@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.andromeda.booknest.model.BookNote;
-import com.example.booknest.R;
+import com.andromeda.booknest.R;
 
 import java.util.ArrayList;
 import java.util.List;
